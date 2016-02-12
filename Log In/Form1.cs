@@ -15,23 +15,12 @@ namespace Log_In
         public Form1()
         {
             InitializeComponent();
-        }
 
-        private void signButton_Click(object sender, EventArgs e)
-        {
-            LogIn li = new LogIn();
-            li.Location = new Point((this.Width - li.Width) / 2, (this.Height - li.Width) / 2);
-            li.Show();
-        }
+            MainScreen ms = new MainScreen();
+            this.Controls.Add(ms);
 
-        private void infoButton_Click(object sender, EventArgs e)
-        {
-
-        }
-        //closes program
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            ms.Location = new Point((Screen.PrimaryScreen.Bounds.Width - ms.Width) / 2, (Screen.PrimaryScreen.Bounds.Height - ms.Height) / 2);
+            ms.Show();
         }
     }
 }

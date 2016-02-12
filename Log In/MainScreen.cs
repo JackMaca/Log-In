@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Log_In
 {
-    public partial class LogIn : UserControl
+    public partial class MainScreen : UserControl
     {
-        public LogIn()
+        public MainScreen()
         {
             InitializeComponent();
+        }
+
+        //closes program
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
