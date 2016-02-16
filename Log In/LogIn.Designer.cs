@@ -34,6 +34,7 @@
             this.userLabel = new System.Windows.Forms.Label();
             this.passText = new System.Windows.Forms.TextBox();
             this.userText = new System.Windows.Forms.TextBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // statusLabel
@@ -50,6 +51,7 @@
             // goButton
             // 
             this.goButton.BackColor = System.Drawing.Color.IndianRed;
+            this.goButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goButton.ForeColor = System.Drawing.Color.White;
             this.goButton.Location = new System.Drawing.Point(233, 282);
@@ -58,6 +60,7 @@
             this.goButton.TabIndex = 14;
             this.goButton.Text = "Sign In";
             this.goButton.UseVisualStyleBackColor = false;
+            this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
             // passLabel
             // 
@@ -97,11 +100,26 @@
             this.userText.Size = new System.Drawing.Size(206, 38);
             this.userText.TabIndex = 9;
             // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.IndianRed;
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.Location = new System.Drawing.Point(410, 446);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(87, 51);
+            this.backButton.TabIndex = 16;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.passLabel);
@@ -123,5 +141,6 @@
         private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.TextBox passText;
         private System.Windows.Forms.TextBox userText;
+        private System.Windows.Forms.Button backButton;
     }
 }

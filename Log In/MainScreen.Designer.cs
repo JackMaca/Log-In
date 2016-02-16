@@ -39,10 +39,10 @@
             this.exitButton.BackColor = System.Drawing.Color.Red;
             this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(422, 425);
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(416, 450);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(49, 36);
+            this.exitButton.Size = new System.Drawing.Size(81, 47);
             this.exitButton.TabIndex = 7;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -54,12 +54,13 @@
             this.infoButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.infoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoButton.ForeColor = System.Drawing.Color.White;
-            this.infoButton.Location = new System.Drawing.Point(171, 267);
+            this.infoButton.Location = new System.Drawing.Point(144, 288);
             this.infoButton.Name = "infoButton";
-            this.infoButton.Size = new System.Drawing.Size(116, 36);
+            this.infoButton.Size = new System.Drawing.Size(181, 75);
             this.infoButton.TabIndex = 6;
             this.infoButton.Text = "About Us";
             this.infoButton.UseVisualStyleBackColor = false;
+            this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
             // welcomeLabel
             // 
@@ -78,12 +79,13 @@
             this.signButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signButton.ForeColor = System.Drawing.Color.White;
-            this.signButton.Location = new System.Drawing.Point(171, 177);
+            this.signButton.Location = new System.Drawing.Point(144, 169);
             this.signButton.Name = "signButton";
-            this.signButton.Size = new System.Drawing.Size(116, 36);
+            this.signButton.Size = new System.Drawing.Size(181, 70);
             this.signButton.TabIndex = 4;
             this.signButton.Text = "Sign In";
             this.signButton.UseVisualStyleBackColor = false;
+            this.signButton.Click += new System.EventHandler(this.signButton_Click);
             // 
             // MainScreen
             // 
