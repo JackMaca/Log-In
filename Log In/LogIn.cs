@@ -33,7 +33,7 @@ namespace Log_In
             else
             {
                 statusLabel.Text = "Incorrect user information.";
-                statusLabel.ForeColor = Color.Red;
+                statusLabel.BackColor = Color.Red;
             }
         }
 

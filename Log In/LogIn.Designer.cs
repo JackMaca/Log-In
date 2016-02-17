@@ -91,6 +91,7 @@
             this.passText.Name = "passText";
             this.passText.Size = new System.Drawing.Size(206, 38);
             this.passText.TabIndex = 10;
+            this.passText.UseSystemPasswordChar = true;
             // 
             // userText
             // 
