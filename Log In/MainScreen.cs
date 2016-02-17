@@ -32,7 +32,6 @@ namespace Log_In
             LogIn li = new LogIn();
             f.Controls.Add(li);
             li.Location = new Point((this.Width - li.Width) / 2, (this.Height - li.Height) / 2);
-            li.Show();
 
         }
 

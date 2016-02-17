@@ -26,7 +26,6 @@ namespace Log_In
             MainScreen ms = new MainScreen();
             f.Controls.Add(ms);
             ms.Location = new Point((this.Width - ms.Width) / 2, (this.Height - ms.Height) / 2);
-            ms.Show();
         }
     }
 }
